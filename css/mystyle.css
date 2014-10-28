@@ -1,0 +1,259 @@
+body {margin:0;
+     padding:0;
+     background:url(../images/index/dark09.png) ;
+     width: 100%;
+     height:100%;
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+     bottom:0;
+     overflow-x:hidden;
+     overflow-y:scroll}
+
+/*#container{*/
+           /*height:100%;*/
+           /*border: 0;*/
+           /*display:flex;*/
+           /*flex-wrap: wrap ;*/
+           /*flex-direction: row;*/
+           /*justify-content: flex-end;*/
+           /*align-items: stretch;*/
+           /*align-content:center;*/
+           /*margin: 0; padding:0; position: relative;*/
+           /*-webkit-background-size: 100%}*/
+
+table{display: flex; flex-shrink: 1}
+
+#header {width:100% ;height:60px;
+         top:0;
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        /*position:relative;*/
+
+       }
+
+#sign_in { padding-top: 17px;font-family:sans-serif; right: 50px; position: absolute}
+
+
+
+/*main{height:100%; padding:0; margin:0;position: static}*/
+
+button{box-shadow:1px 1px  black ; padding:0; border-radius: 5px;background: -moz-linear-gradient(top, rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%); /* FF3.6+ */
+       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(157,213,58,1)), color-stop(50%,rgba(161,213,79,1)), color-stop(51%,rgba(128,194,23,1)), color-stop(100%,rgba(124,188,10,1))); /* Chrome,Safari4+ */ ;
+      }
+
+#sign_up{margin:50px auto;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;
+         width: 326px;
+        -webkit-box-shadow: -1px 0px 5px 1px rgba(245,226,12,1);
+        -moz-box-shadow: -1px 0px 5px 1px rgba(245,226,12,1);
+        box-shadow: -1px 0px 5px 1px rgba(245,226,12,1);
+        flex:1;
+        padding: 20px;
+       }
+
+.form{right: 50px; }
+
+#checkbox{color:white}
+
+
+header input{
+            background: -moz-linear-gradient(top, rgba(230,240,163,1) 0%, rgba(219,240,67,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,240,163,1)), color-stop(100%,rgba(219,240,67,1))); /* Chrome,Safari4+ */
+            border-radius: 20%;
+
+            }
+
+div input{background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.53) 47%, rgba(237,237,237,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.53)), color-stop(100%, rgba(237,237,237,0)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.53) 47%, rgba(237,237,237,0) 100%);
+          border-radius: 5px;
+         }
+
+ h1{color:white ; margin: 0 !important;font-size: 80px;}
+
+ h3{color: white;font-family:garigarikataw ;font-size: 25px; font-style: oblique}
+
+ h2{color: white;font-family:"Tangerine",serif; font-size: 30px}
+
+#footer {padding-top: 10px;
+        background: -moz-linear-gradient(top, rgba(255,255,255,0) 14%, rgba(255,255,255,0.99) 99%, rgba(255,255,255,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,rgba(255,255,255,0)), color-stop(99%,rgba(255,255,255,0.99)), color-stop(100%,rgba(255,255,255,1)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 14%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%);
+        text-align: center;
+        bottom: 0;
+        position:relative;
+        clear:both;
+      }
+
+span{color:blue;}
+
+.input1 input{width: 150px; height: 25px}
+
+.input2 input{width: 305px; height: 25px}
+
+.input3 input{height: 20px}
+
+.footer{color:green; bottom: 0 !important;margin-top: 20px;position: static}
+
+.footer2{color:green;bottom: 0; }
+
+div.footer2 span {text-decoration: underline}
+
+#search{ margin-top: 17px;margin-left: 50px; position: absolute}
+
+
+#column2{width:700px; height: 100% ;border-radius: 25%; margin: 200px auto;}
+
+
+#column2 button{height: 100px;background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+    position: relative}
+
+#submit{float:left}
+
+video{float:left; width: 700px; height: 600px; margin-left: 50px}
+
+@font-face {
+    font-family: garigarikataw;
+    src: url(../fonts/Fragmentcore.otf);
+}
+
+#column2 a{font-family: garigarikataw}
+
+/************************************************ MEDIA QUERIES *******************************************************/
+@media only screen and (min-height: 800px) {
+       #container {
+            height:858px;
+
+        }
+}
+
+@media only screen and (max-width:480px){
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    /* Styles */
+    .input1 input{width: 120px; height: 15px}
+
+    .input2 input{width: 248px; height: 15px}
+
+    .input3 input{height: 15px; width:120px}
+
+    #search{ margin-top: 50px;align-content: center; position: absolute;width:120px; height: 20px}
+
+    video{display:none;width: 300px;height: 200px; align-items: center}
+
+    #sign_up{height: 490px; align-content: center}
+
+    body{background: darkslateblue;width: 320px}
+
+    .form{align-content: center}
+
+    #header{width: 400px}
+}
+
+#navigation {color: white;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 00px 25px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+    width: 100%;
+
+}
+
+
+
+a{ font-family:"Tangerine",serif;
+    color: white;margin-left: auto;margin-right: auto;
+    font-size: 40px;border-left: 2px solid white;
+    text-align: center;padding-left: 10px;padding-right: 10px;
+    text-decoration: underline;border-right: 2px solid white;
+    border-radius:5%
+}
+
+a:active{color: yellow}
+
+#link1{color: yellow}
+
+#horizontal{margin-top: 0}
+
+#border{clear:both;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 00px 25px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+    height: 20px;color: white;
+}
+#basketball{width:100px; height: 100px; position: absolute; left: 100px; margin-top:200px }
+
+/*#basketball {*/
+    /*-webkit-animation: mybounce 2s infinite; *//* Chrome, Safari, Opera */
+    /*animation: mybounce 2s infinite;*/
+/*}*/
+
+/* Chrome, Safari, Opera */
+/*@-webkit-keyframes mybounce {*/
+    /*0% {left: 100px; margin-top:210px;transform:rotate(0deg)}*/
+    /*5% {left: 100px; margin-top:220px;transform:rotate(18deg)}*/
+    /*10% {left: 100px; margin-top:230px;transform:rotate(36deg)}*/
+    /*15% {left: 100px; margin-top:240px;transform:rotate(54deg)}*/
+    /*20% {left: 100px; margin-top:250px;transform:rotate(72deg)}*/
+    /*25% {left: 100px; margin-top:260px;transform:rotate(90deg)}*/
+    /*30% {left: 100px; margin-top:270px;transform:rotate(108deg)}*/
+    /*35% {left: 100px; margin-top:280px;transform:rotate(126deg)}*/
+    /*40% {left: 100px; margin-top:290px;transform:rotate(144deg)}*/
+    /*45% {left: 100px; margin-top:300px;transform:rotate(162deg)}*/
+    /*50% {left: 100px; margin-top:310px;transform:rotate(180deg)}*/
+    /*55% {left: 100px; margin-top:310px;transform:rotate(216deg)}*/
+    /*60% {left: 100px; margin-top:300px;transform:rotate(234deg)}*/
+    /*65% {left: 100px; margin-top:290px;transform:rotate(252deg)}*/
+    /*70% {left: 100px; margin-top:280px;transform:rotate(270deg)}*/
+    /*75% {left: 100px; margin-top:270px;transform:rotate(288deg)}*/
+    /*80% {left: 100px; margin-top:260px;transform:rotate(306deg)}*/
+    /*85% {left: 100px; margin-top:250px;transform:rotate(324deg)}*/
+    /*90% {left: 100px; margin-top:240px;transform:rotate(342deg)}*/
+    /*95% {left: 100px; margin-top:230px;transform:rotate(350deg)}*/
+    /*100% {left: 100px; margin-top:220px;transform:rotate(360deg)}*/
+
+
+/*}*/
+
+/* Standard syntax */
+/*@keyframes mybounce {*/
+
+    /*0% {left: 100px; margin-top:210px;transform:rotate(5deg)}*/
+    /*5% {left: 100px; margin-top:220px;transform:rotate(10deg)}*/
+    /*10% {left: 100px; margin-top:230px;transform:rotate(15deg)}*/
+    /*15% {left: 100px; margin-top:240px;transform:rotate(20deg)}*/
+    /*20% {left: 100px; margin-top:250px;transform:rotate(25deg)}*/
+    /*25% {left: 100px; margin-top:260px;transform:rotate(30deg)}*/
+    /*30% {left: 100px; margin-top:270px;transform:rotate(35deg)}*/
+    /*35% {left: 100px; margin-top:280px;transform:rotate(40deg)}*/
+    /*40% {left: 100px; margin-top:290px;transform:rotate(45deg)}*/
+    /*45% {left: 100px; margin-top:300px;transform:rotate(50deg)}*/
+    /*50% {left: 100px; margin-top:310px;transform:rotate(55deg)}*/
+    /*55% {left: 100px; margin-top:310px;transform:rotate(60deg)}*/
+    /*60% {left: 100px; margin-top:300px;transform:rotate(65deg)}*/
+    /*65% {left: 100px; margin-top:290px;transform:rotate(70deg)}*/
+    /*70% {left: 100px; margin-top:280px;transform:rotate(75deg)}*/
+    /*75% {left: 100px; margin-top:270px;transform:rotate(80deg)}*/
+    /*80% {left: 100px; margin-top:260px;transform:rotate(85deg)}*/
+    /*85% {left: 100px; margin-top:250px;transform:rotate(90deg)}*/
+    /*90% {left: 100px; margin-top:240px;transform:rotate(95deg)}*/
+    /*95% {left: 100px; margin-top:230px;transform:rotate(100deg)}*/
+    /*100% {left: 100px; margin-top:220px;transform:rotate(105deg)}*/
+
+
+
+
+/*}*/

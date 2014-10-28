@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Praiz</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <script type="text/javascript" src="Javascript/jquery-1.11.1.js"></script>
+    <link rel="shortcut icon" href="./images/music/unnamed.ico">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&effect=3d">
+
+    <style>
+        body {margin:0;
+            padding:0;
+            background:url(./images/index/dark09.png);
+            width: 100%;
+            display: flex;min-height: 100vh;
+            height:100%;flex-direction: column;
+            bottom:0;
+            overflow-x: hidden;
+
+            }
+
+        #container{width:100%;height: 100%; margin: 0 auto;display:inline-block;overflow: scroll;white-space: nowrap;flex: 1}
+
+        #header {width:100% ;height:60px;
+            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+            /*position:relative;*/
+        }
+
+
+        #navigation {color: white;
+            text-align: center;
+            -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 00px 25px 0px rgba(0,0,0,1);
+            box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+            width: 100%;
+        }
+        a{ font-family:"Tangerine",serif;
+            color: white;margin-left: auto;margin-right: auto;
+            font-size: 40px;border-left: 2px solid white;
+            text-align: center;padding-left: 10px;padding-right: 10px;
+            text-decoration: underline;border-right: 2px solid white;
+            border-radius:5%;
+        }
+
+        a:active{color:yellow}
+
+        #link1{color: yellow}
+
+        #border{clear:both;
+            -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 00px 25px 0px rgba(0,0,0,1);
+            box-shadow: 0px 0px 25px 0px rgba(0,0,0,1);
+            height: 20px;color: white;
+               }
+
+
+        .footer{color:green; margin-bottom: 0 !important;padding-top: 32px}
+
+        .footer2{color:green; }
+
+        div.footer2 span {text-decoration: underline}
+
+        #footer {
+            background: -moz-linear-gradient(top, rgba(255,255,255,0) 14%, rgba(255,255,255,0.99) 99%, rgba(255,255,255,1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,rgba(255,255,255,0)), color-stop(99%,rgba(255,255,255,0.99)), color-stop(100%,rgba(255,255,255,1)));
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0) 14%,rgba(255,255,255,0.99) 99%,rgba(255,255,255,1) 100%);
+            text-align: center;
+            bottom: 0;
+            position:relative;
+            width: 100%;
+            clear:both;
+            order: 2;
+            align-self: flex-end;
+            flex-wrap: wrap;
+        }
+
+        audio{width: 420px}
+
+        aside{margin-left: 5px;float:left;margin-top: 5px;
+              padding: 10px;background: goldenrod;
+            width: 250px; height:100%;border-radius: 5%;
+            -webkit-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            -moz-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            }
+
+        video{margin-top: 5px;padding: 0}
+
+        #multimedia{float:left;border-radius: 5%;overflow-y:scroll;overflow-x: hidden;height: 505px;
+                    -webkit-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+                    -moz-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+                    box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+                    padding: 10px;white-space: pre-wrap;
+                     width:420px;
+                    margin-top: 5px;margin-left: 10px;
+                   }
+        h2{font-family: "Tangerine",serif;color: dodgerblue;font-size: 30px}
+
+        img{border-radius: 50%; height: 100px;width: 100px;padding: 5px;
+            -webkit-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            -moz-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            margin-left:70px;background: dodgerblue;
+            transition: width 1s, height 1s, transform 19s;
+            transform: rotate(0deg);
+           }
+
+        figcaption{text-align: center;color: black;}
+
+    #about{-webkit-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+          -moz-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+           box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);padding: 5px;
+          border-radius:5%;
+         }
+
+        p{-webkit-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            -moz-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);padding: 5px;
+          border-radius: 25%;background: rosybrown;color:blanchedalmond;
+         }
+
+        section{width:600px;height: 515px;border-radius: 5%;margin-top:5px;overflow-y: scroll;
+            -webkit-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            -moz-box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);
+            box-shadow: -1px 0px 5px 1px rgba(82,26,63,1);padding: 5px;
+           display: inline-block;margin-left: 10px;
+        }
+
+         article{white-space:pre-wrap}
+
+        #multimedia::-webkit-scrollbar{width:10px;}
+
+        section::-webkit-scrollbar{width:10px;}
+
+        @font-face {
+            font-family: garigarikataw;
+            src: url(fonts/Fragmentcore.otf);
+        }
+
+        #some-text{float:left;
+            -webkit-column-count: 2; /* Chrome, Safari, Opera */
+            -moz-column-count: 2; /* Firefox */
+            column-count: 2;
+            font-family: garigarikataw;
+            font-size: 25px;
+            color:white}
+        dialog{z-index: -1}
+
+        summary{color:white}
+
+        h1{color:white}
+
+     li{color:white}
+
+        h5{margin:0}
+
+    </style>
+
+</head>
+<!--Body Begin-->
+<body>
+<!--<div id="container">-->
+
+<div id="header"></div>
+
+<nav id="navigation"><a href="index.html" >Home</a><a href="music.html">Music Player</a><a href="wheel.html">Color Wheel</a><a href="media.html" id="link1">Media</a><a href='ajaxrequest.html'>Ajax</a></nav>
+<main>
+<div id="container">
+ <aside>
+        <img src="images/index/me.png">
+    <figure>
+        <figcaption>
+            <h4 class="font-effect-3d">Isaac Agutey</h4>
+        </figcaption>
+    </figure>
+     <h5>Profile Completion:<meter value="0.6">60%</meter>60%</h5>
+    <div id="about">
+    <p>Kingdom: Animalia</p>
+    <p>Phylum: Cordata</p>
+    <p>Class: Mammalia</p>
+    <p>Order: Primates</p>
+    <p>Family: Hominidae</p>
+    <p>Genus: Homo</p>
+    <p>Species: Sapiens</p>
+    </div>
+</aside>
+
+        <div id="multimedia">
+    <h2>Code</h2>
+    <video controls height="315" width="420" src="videos/code.mp4">
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    </video>
+    <h2>Pirates of Caribbean</h2>
+    <audio controls src="wisdom_audio/Pirates%20Of%20The%20Caribbean%20Soundtrack.mp3"></audio>
+    <h2>Ruth Lorenzo Knocking On Heavens Door</h2>
+    <embed width="420" height="315" src="http://www.youtube.com/v/XGSy3_Czz8k"></embed>
+    </div>
+    <section><article id="some-text" >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+           <mark>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</mark>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+           <mark>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</mark>
+    </article></section>
+
+        <section>
+            <h1>BDI:Bi-directional Isolation</h1>
+            <ul>
+                <li>TurnToTech <bdi>hrefs</bdi>: 60%</li><br>
+                <li>Student <bdi>jdoe</bdi>: 80%</li><br>
+                <li>Tutor <bdi>إيان</bdi>: 90%</li><br>
+                <li><ruby>漢 <rt><rp>(</rp>ㄏㄢˋ<rp>)</rp></rt></ruby></li><br>
+                <li><progress value="22" max="100"></progress></li><br>
+                <li>SVG diagram</li><br>
+                <li> <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="grey" />
+                     </svg>
+                </li>
+                <div style="background:sandybrown;border:1px solid #cccccc;padding: 10px;" contextmenu="mymenu">
+                    <h3>Right-click inside this box to see the context menu!</h3>
+                       <menu type="context" id="mymenu">
+                        <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
+                        <menu label="Share on...">
+                            <menuitem label="Twitter" icon="ico_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+                            <menuitem label="Facebook" icon="ico_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+                        </menu>
+                        <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+                       </menu>
+                </div>
+            </ul>
+        </section>
+</div>
+<div id="section"></div>
+<div id="border"><marquee scrollamount="1.5">Jesus Is Lord of All</marquee></div>
+</main>
+<div id="footer">
+    <div class="footer">Copyright <span>&copy</span> 2014, AguTech Inc. All rights reserved.</div>
+    <div class="footer2"><span>Contact</span> | <span>Terms of use</span> | <span>Privacy policy</span></div>
+</div>
+</body>
+</html>

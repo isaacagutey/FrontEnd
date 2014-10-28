@@ -1,0 +1,73 @@
+<!--Html 5-->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Praiz</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="shortcut icon" href="./images/music/unnamed.ico">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&effect=3d">
+
+    <script type="text/javascript" src="Javascript/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="Javascript/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="Javascript/music.js"></script>
+
+</head>
+<!--Body Begin-->
+<body>
+<!--<div id="container">-->
+<div id="header"></div>
+
+<nav id="navigation"><a href="index.html" >Home</a><a href="music.html" id="link1">Music Player</a><a href="wheel.html">Color Wheel</a><a href="media.html">Media</a><a href='ajaxrequest.html'>Ajax</a></nav>
+
+<div id="audioplayer" >
+    <marquee id="scroll" behavior="scroll"  width="345" height="45" direction="left" scrollamount="1.5"></marquee>
+    <table>
+        <tr>
+            <td><div id="prevButton" class="prevButton"></div></td>
+            <td id="playButton" class="playButton"><div id="shuffle" class="shuffle-off">S</div></td>
+            <td><div id="nextButton" class="nextButton"></div></td>
+        </tr>
+        <tr>
+            <td><div id="songtime"></div></td>
+            <td><div id="loop-none" class="no-loop">R</div></td>
+            <td><div id="timeleft"></div></td>
+        </tr>
+        <tr>
+            <td colspan="3"><div id="timeline"></div></td>
+        </tr>
+        <tr>
+            <td colspan="3" >
+                <details><summary>Playlist</summary>
+                <ol class="overflow" id="overflow">
+                    <li id="0"> The Miracle of Your Mind</li>
+                    <li id="1"> Earl Nightingale - Listen and Learn!</li>
+                    <li id="2"> Pirates Of The Caribbean Soundtrack</li>
+                    <li id="3"> Yours Forever</li>
+                    <li id="4"> In Jesus Name</li>
+                    <li id="5"> Victor's Crown</li>
+               </ol>
+                </details>
+            </td>
+        </tr>
+    </table>
+  </div>
+<!--</div>-->
+<div id="border1"><marquee scrollamount="1.5">Jesus Is Lord of All</marquee></div>
+
+
+<div id="footer">
+    <div class="footer">Copyright <span>&copy</span> 2014, AguTech Inc. All rights reserved.</div>
+    <div class="footer2"><span>Contact</span> | <span>Terms of use</span> | <span>Privacy policy</span></div>
+</div>
+
+</body>
+</html>

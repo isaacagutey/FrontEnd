@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>Praiz</title>
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&effect=3d">
+        <link rel="short icon" href="images/music/unnamed.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    </head>
+   <body  >
+
+<div id="container">
+         <div id="header">
+             <label><input id="search" class="animated lightSpeedIn" type="search" name="search" placeholder="search music" size="20"></label>
+             <form id="sign_in" name="signing_in" onsubmit="return validateForm()" method="post" action="music.html" class="animated bounceInLeft">
+                 <label class="input3"><input type="email" size="15" name="email" placeholder="Email"></label>
+                 <label class="input3"><input type="password" size="15" name="password" placeholder="Password"></label>
+                 <input type="submit" value="Log In">
+             </form>
+
+         </div>
+
+         <nav id="navigation"><a href="index.html" id="link1">Home</a><a href="music.html">Music Player</a><a href="wheel.html">Color Wheel</a><a href="media.html">Media</a><a href='ajaxrequest.html'>Ajax</a></nav>
+
+         <form id="sign_up" onsubmit="return validateSignup()" class="animated bounceInDown" action="wheel.html"  method="post" name="signing_up">
+
+              <h1 class="font-effect-3d">Sign Up</h1>
+              <h2>Hurry !! don't miss the action !!!</h2>
+
+
+              <p class="form">
+                  <label class="input1"><input type="text" name="date" placeholder="Date"/></label>
+                  <label class="input1"><input type="datetime"  name="datetime" placeholder="Date Time"/></label>
+              </p>
+              <p class="form">
+                  <label class="input1"><input type="url" name="url" placeholder="URL"/></label>
+                  <label class="input1"><input type="tel" name="phone"  placeholder="Phone Number"/></label>
+              </p>
+              <p class="form">
+                  <label class="input2"><input type="month" name="month" placeholder="month"/></label>
+              </p>
+             <p class="form">
+                 <label class="input2"><input type="week" name="week" placeholder="Week"/></label>
+             </p>
+             <p class="form">
+                 <label class="input2"><input type="number" name="number" placeholder="Number" min="1900" max="'2014"/></label>
+             </p>
+              <p class="form">
+                  <label class="input2"><input type="datetime-local" name="datetimelocal" placeholder="Datetime-local"/></label>
+              </p>
+               <p id="checkbox">
+                   <label><input type="checkbox"/>Male <input type="checkbox">Female <input type="color"> Color</label>
+               </p>
+
+                 <input type="submit" value="submit">
+           </form>
+
+</div>
+
+<div id="border"><marquee scrollamount="1.5">Jesus Is Lord of All</marquee></div>
+
+<div id="footer">
+        <div class="footer">Copyright <span>&copy</span> 2014, AguTech Inc. All rights reserved.</div>
+        <div class="footer2"><span>Contact</span> | <span>Terms of use</span> | <span>Privacy policy</span></div>
+</div>
+    <!--<div id="column2">-->
+
+                <!--<nav><a href="music.html"><button><h3>Link to Media Player</h3></button></a> <br><br><a href="wheel.html"><button><h3>Link to Color Wheel</h3></button></a></nav>-->
+
+    <!--</div>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    var validateEmail;
+    var validatePassword;
+    var validateDate;
+    var validateDatetime;
+    var validateUrl;
+    var validatePhone;
+    var validateMonth;
+    var validateWeek;
+    var validateNumber;
+    var validateDatetimelocal;
+
+    function validateForm(){
+        validatePassword=document.forms["signing_in"]["password"].value;
+        if(validatePassword == null || validatePassword==""){
+            alert("Password field must not be left empty");
+            return false;
+        }
+
+        validateEmail =document.forms["signing_in"]["email"].value;
+        var at_position=validateEmail.indexOf("@");
+        var dot_position=validateEmail.lastIndexOf(".");
+
+        if(at_position<1 || dot_position < at_position+2 || dot_position+2 >= validate.length){
+            alert("Invalid email address");
+            return false;
+        }
+    }
+
+
+     function validateSignup(){
+
+         validateDate=document.forms["signing_up"]["date"].value;
+         if(validateDate==null||validateDate==""){
+             alert("Date field must not be left empty");
+             return false;
+         }
+
+         validateDatetime=document.forms["signing_up"]["datetime"].value;
+         if(validateDatetime==null || validateDatetime==""){
+             alert("Datetime field must not be left empty");
+             return false;
+         }
+
+         validateUrl=document.forms["signing_up"]["url"].value;
+         if(validateUrl==null || validateUrl==""){
+             alert("Url field must not be left empty");
+             return false;
+         }
+
+         validatePhone=document.forms["signing_up"]["phone"].value;
+         if(validatePhone==null || validatePhone==""){
+             alert("phone field must not be left empty");
+             return false;
+         }
+
+         validateMonth=document.forms["signing_up"]["month"].value;
+         if(validateMonth==null || validateMonth==""){
+             alert("Month field must not be left empty");
+             return false;
+         }
+         validateWeek=document.forms["signing_up"]["week"].value;
+         if(validateWeek==null || validateWeek==""){
+             alert("Week field must not be left empty");
+             return false;
+         }
+
+         validateNumber=document.forms["signing_up"]["number"];
+         if(validateNumber==null || validateNumber==""){
+          alert("Number field must not be left empty");
+         return false;
+         }
+
+         validateDatetimelocal=document.forms["signing_up"]["datetimelocal"].value;
+         if(validateDatetimelocal==null || validateDatetimelocal==""){
+             alert("Date-time-local must be filled");
+             return false;
+         }
+     }
+</script>
+     </body>
+</html>
