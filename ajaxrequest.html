@@ -10,11 +10,12 @@
 </style>
 </head>
 <body>
+
 <div id="header"></div>
 <nav id="navigation"><a href="index.html" >Home</a><a href="music.html" >Music Player</a><a href="wheel.html">Color Wheel</a><a href="media.html">Media</a><a href='ajaxrequest.html' id="link1">Ajax</a></nav>
 <input type="button" value="Click Me!!" id="submit">
-<div id="container"></div>
-
+<div id="container">
+</div>
 <div id="border"><marquee scrollamount="1.5">Jesus Is Lord of All</marquee></div>
 
 <div id="footer">
@@ -26,7 +27,7 @@
 <script>
     $(document).ready(function(){    
             $("#submit").click(function(){
-            $("#container").load('form2.html');              
+            $("#container").load('form2.html');
         });
     });
 </script>
