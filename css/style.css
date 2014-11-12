@@ -43,10 +43,10 @@
 table{
     margin: 0 auto;
     width:350px;
-    background: -webkit-linear-gradient(white,dodgerblue,yellow, green); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(white,dodgerblue,yellow, green); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(white,dodgerblue, yellow,green); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(white,dodgerblue, yellow,green); /* Standard syntax (must be last) */
+    /*background: -webkit-linear-gradient(white,dodgerblue,yellow, green); *//* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(white,dodgerblue,yellow, green); *//* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(white,dodgerblue, yellow,green); *//* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(white,dodgerblue, yellow,green); *//* Standard syntax (must be last) */
     opacity: 0.8;
     padding-top: 10px;
     background-size: 100% 100%;
@@ -56,6 +56,56 @@ table{
     box-shadow: 0px 5px 6px 5px rgba(0,0,0,1);
 
     }
+
+ .static{
+     background: -webkit-linear-gradient(white,dodgerblue,yellow, green);
+     background: -o-linear-gradient(white,dodgerblue,yellow, green);
+     background: -moz-linear-gradient(white,dodgerblue, yellow,green);
+     background: linear-gradient(white,dodgerblue, yellow,green);
+ }
+
+ .colors {
+     -webkit-animation: myfirst 30s infinite; /* Chrome, Safari, Opera */
+     animation: myfirst 30s infinite;
+ }
+
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes myfirst {
+     0% {
+         background: -webkit-linear-gradient(white, dodgerblue, yellow, #dda0dd); /* For Safari 5.1 to 6.0 */
+         background: -o-linear-gradient(white, dodgerblue, yellow, #dda0dd); /* For Opera 11.1 to 12.0 */
+         background: -moz-linear-gradient(white, dodgerblue, yellow,#dda0dd); /* For Firefox 3.6 to 15 */
+         background: linear-gradient(white, dodgerblue, yellow, #dda0dd); /* Standard syntax (must be last) */
+     }
+
+     25% {
+         background: -webkit-linear-gradient(#98fb98, white, dodgerblue, yellow); /* For Safari 5.1 to 6.0 */
+         background: -o-linear-gradient(#98fb98, white, dodgerblue, yellow); /* For Opera 11.1 to 12.0 */
+         background: -moz-linear-gradient(#98fb98, white, dodgerblue, yellow); /* For Firefox 3.6 to 15 */
+         background: linear-gradient(#98fb98, white, dodgerblue, yellow); /* Standard syntax (must be last) */
+     }
+
+     50% {
+         background: -webkit-linear-gradient(yellow, palevioletred, white, dodgerblue); /* For Safari 5.1 to 6.0 */
+         background: -o-linear-gradient(yellow, palevioletred, white, dodgerblue); /* For Opera 11.1 to 12.0 */
+         background: -moz-linear-gradient(yellow, palevioletred, white, dodgerblue); /* For Firefox 3.6 to 15 */
+         background: linear-gradient(yellow, palevioletred, white, dodgerblue); /* Standard syntax (must be last) */
+     }
+
+     75% {
+         background: -webkit-linear-gradient(powderblue, yellow, green, white); /* For Safari 5.1 to 6.0 */
+         background: -o-linear-gradient(powderblue, yellow, green, white); /* For Opera 11.1 to 12.0 */
+         background: -moz-linear-gradient(powderblue, yellow, green, white); /* For Firefox 3.6 to 15 */
+         background: linear-gradient(powderblue, yellow, green, white); /* Standard syntax (must be last) */
+     }
+
+     100% {
+         background: -webkit-linear-gradient(yellow, white, wheat, dodgerblue); /* For Safari 5.1 to 6.0 */
+         background: -o-linear-gradient(yellow, white, wheat, dodgerblue); /* For Opera 11.1 to 12.0 */
+         background: -moz-linear-gradient(yellow, white, wheat, dodgerblue); /* For Firefox 3.6 to 15 */
+         background: linear-gradient(yellow, white, wheat, dodgerblue); /* Standard syntax (must be last) */
+     }
+ }
 
  #playButton {
      height: 200px;
@@ -69,14 +119,6 @@ table{
  .playButton{ background: url(../images/music/sound3.png) no-repeat center;}
 
  #playButton:hover {box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.8);cursor: pointer}
-
- /*#pauseButton{height:200px;*/
-              /*width: 200px;*/
-              /*border: none;*/
-              /*border-radius: 50px;*/
-              /*background-size: 100% 100%;*/
-              /*box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.5);*/
-             /*}*/
 
  .pauseButton { background: url(../images/music/soundz.gif) no-repeat center;}
 
@@ -176,7 +218,7 @@ table{
 
  li{font-family: myfont;
     font-size: 20px;
-    font-style: oblique}
+   }
 
  li:hover{background: rgb(255,175,75); /* Old browsers */
      background: -moz-linear-gradient(top, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%); /* FF3.6+ */
@@ -187,7 +229,12 @@ table{
      background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* W3C */
      cursor: pointer}
 
- .zem{color:green}
+ .zem{ background: -moz-linear-gradient(top, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%); /* FF3.6+ */
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,175,75,1)), color-stop(100%,rgba(255,146,10,1))); /* Chrome,Safari4+ */
+     background: -webkit-linear-gradient(top, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* Chrome10+,Safari5.1+ */
+     background: -o-linear-gradient(top, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* Opera 11.10+ */
+     background: -ms-linear-gradient(top, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* IE10+ */
+     background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* W3C */}
 
 div.overflow{ height: 250px; overflow-y: scroll;}
 
@@ -268,8 +315,6 @@ div.overflow{ height: 250px; overflow-y: scroll;}
    margin-left: 130px;
      border-radius: 45%;position: relative;
      ;
-
-     /*margin: 50px auto;*/
     }
 
  .shuffle-off:hover{cursor: pointer}

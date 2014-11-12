@@ -7,7 +7,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui, user-scalable=no">
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -24,13 +24,9 @@
 <!--Body Begin-->
 <body>
 <!--<div id="container">-->
-<div id="header"></div>
-
-<nav id="navigation"><a href="index.html" >Home</a><a href="music.html" id="link1">Music Player</a><a href="wheel.html">Color Wheel</a><a href="media.html">Media</a><a href='ajaxrequest.html'>Ajax</a></nav>
-
 <div id="audioplayer" >
     <marquee id="scroll" behavior="scroll"  width="345" height="45" direction="left" scrollamount="1.5"></marquee>
-    <table>
+    <table id="color" class="static">
         <tr>
             <td><div id="prevButton" class="prevButton"></div></td>
             <td id="playButton" class="playButton"><div id="shuffle" class="shuffle-off">S</div></td>
@@ -48,12 +44,12 @@
             <td colspan="3" >
                 <details><summary>Playlist</summary>
                 <ol class="overflow" id="overflow">
-                    <li id="0"> The Miracle of Your Mind</li>
-                    <li id="1"> Earl Nightingale - Listen and Learn!</li>
-                    <li id="2"> Pirates Of The Caribbean Soundtrack</li>
-                    <li id="3"> Yours Forever</li>
-                    <li id="4"> In Jesus Name</li>
-                    <li id="5"> Victor's Crown</li>
+                    <li id="1"> Never Say Never</li>
+                    <li id="2"> Michael Jackson - Billie Jean</li>
+                    <li id="3"> Gangnam Style .mp3</li>
+                    <li id="4"> Yours Forever - Hillsong</li>
+                    <li id="5"> In Jesus Name - Hillsong</li>
+                    <li id="6"> Victor's Crown - Hillsong</li>
                </ol>
                 </details>
             </td>
@@ -61,13 +57,5 @@
     </table>
   </div>
 <!--</div>-->
-<div id="border1"><marquee scrollamount="1.5">Jesus Is Lord of All</marquee></div>
-
-
-<div id="footer">
-    <div class="footer">Copyright <span>&copy</span> 2014, AguTech Inc. All rights reserved.</div>
-    <div class="footer2"><span>Contact</span> | <span>Terms of use</span> | <span>Privacy policy</span></div>
-</div>
-
 </body>
 </html>
